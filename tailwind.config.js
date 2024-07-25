@@ -16,6 +16,13 @@ export default {
         secondary: "#00B2FF",
       },
       keyframes: {
+        ring:{
+          "0%":{transform: "rotate(0deg)"},
+          "25%":{transform: "rotate(10deg)"},
+          "50%":{transform: "rotate(0deg)"},
+          "75%":{transform: "rotate(-10deg)"},
+          "100%":{transform: "rotate(0deg)"}
+        },
         falldown: {
           "0%": { transform: "translateY(-3000px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
@@ -58,6 +65,7 @@ export default {
         leftToRight: "leftToRight 2s ease",
         infiniteSlide: "infiniteSlide 30s  linear infinite",
         moveUp: "moveUp .5s ease-in-out",
+        ring: "ring .2s ease-in-out",
       },
       transform: {
         slideRight: "translateX(-20px)",
