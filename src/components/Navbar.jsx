@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className={`overflow-x-hidden h-[80px] w-screen font-kanit text-black flex items-center fixed inset-0 z-20 duration-500 ease-in-out ${isHome ? ` bg-none border-none shadow-none`:`border bg-[#F7F8FF] border-b-gray-200 shadow-md`}` }
       style={{ transitionProperty: 'background-color' }}>
-      <nav className='container mx-auto px-8 md:px-8 py-8 lg:px-[100px] flex justify-between items-center '>
+      <nav className='container mx-auto px-8 md:px-8 py-8 lg:px-[100px] flex justify-between items-center text-gray-500 '>
         <Link
           to="home"
           spy={true}
@@ -33,7 +33,7 @@ const Navbar = () => {
           offset={-100}
           duration={1000}
           onSetActive={() => handleActiveLink('home')}
-          className='text-2xl font-semibold cursor-pointer select-none'>Jmr.<span className='text-secondary'>Dev</span></Link>
+          className='text-2xl font-semibold cursor-pointer select-none text-black'>Jmr.<span className='text-secondary'>Dev</span></Link>
         <div className='flex'>
           <Link
             to="home"
@@ -96,7 +96,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className={`  w-full h-screen py-8 fixed top-0 right-0 z-50 bg-primary shadow-lg transition-all duration-1000 ease ${isNavOpen ? `translate-x-0 opacity-100` : `translate-x-full opacity-0`}`}>
+      <nav className={`text-gray-500  w-full h-screen py-8 fixed top-0 right-0 z-50 bg-primary shadow-lg transition-all duration-1000 ease ${isNavOpen ? `translate-x-0 opacity-100` : `translate-x-full opacity-0`}`}>
         <div className='flex justify-end pb-8 pr-6'>
           <button onClick={()=> setIsNavOpen(false)} className={`cursor-pointer text-xl hover:text-secondary `}><MdOutlineClose/></button>
         </div>
