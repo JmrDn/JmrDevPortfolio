@@ -75,6 +75,12 @@ export default {
           "-ms-overflow-style": "none",
           "scrollbar-width": "none",
         },
+       
+        ".group .group-child:hover":{
+          width:"100%",
+          height:"100%",
+          "z-index": "99"
+        }
       };
       addUtilities(newUtilities);
     },
