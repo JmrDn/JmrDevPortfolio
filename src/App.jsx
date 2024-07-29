@@ -5,9 +5,11 @@ import AboutPage from './Pages/AboutPage'
 import SkillsPage from './Pages/SkillsPage'
 import ProjectPage from './Pages/ProjectPage'
 import ContactPage from './Pages/ContactPage'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  
+    
 
   return (
     <div className='overflow-x-hidden '>
@@ -17,6 +19,7 @@ function App() {
       <SkillsPage/>
       <ProjectPage/>
       <ContactPage/>
+      <ToastContainer/>
     </div>
   )
 }

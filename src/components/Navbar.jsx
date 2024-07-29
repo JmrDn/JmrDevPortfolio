@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
   const [isHome, setIsHome] = useState(true);
@@ -14,15 +15,13 @@ const Navbar = () => {
   
   }, [navWhere]);
 
-  useEffect(()=>{
-    console.log('isnavOpen', isNavOpen);
-  },[isNavOpen]);
+ 
   const handleActiveLink = (nav) => {
     setNavWhere(nav);
   }
 
   return (
-    <div className={`overflow-x-hidden h-[80px] w-screen font-kanit text-black flex items-center fixed inset-0 z-20 duration-500 ease-in-out ${isHome ? ` bg-none border-none shadow-none`:`border bg-[#F7F8FF] border-b-gray-200 shadow-md`}` }
+    <div className={`overflow-hidden h-[80px] w-screen font-kanit text-black flex items-center fixed inset-0 z-50 duration-500 ease-in-out ${isHome ? ` bg-none border-none shadow-none`:`border bg-[#F7F8FF] border-b-gray-200 shadow-md`}` }
       style={{ transitionProperty: 'background-color' }}>
       <nav className='container mx-auto px-8 md:px-8 py-8 lg:px-[100px] flex justify-between items-center text-gray-500 '>
         <Link
@@ -92,13 +91,13 @@ const Navbar = () => {
             onSetActive={() => handleActiveLink('contact')}
             className={navWhere === 'contact' ? `hidden lg:flex mr-14 cursor-pointer text-secondary` : `hidden lg:flex mr-14 cursor-pointer `}
           >Contact</Link>
-          <button onClick={()=> setIsNavOpen(true)} className={`cursor-pointer hover:text-secondary flex lg:hidden ${isNavOpen? `hidden`: `flex`}`}> <GiHamburgerMenu /></button>
+          <button onClick={()=> setIsNavOpen(true)} className={`cursor-pointer hover:text-secondary flex lg:hidden text-3xl ${isNavOpen? `hidden`: `flex`}`}> <HiMenuAlt3 /></button>
         </div>
       </nav>
 
-      <nav className={`text-gray-500  w-full h-screen py-8 fixed top-0 right-0 z-50 bg-primary shadow-lg transition-all duration-1000 ease ${isNavOpen ? `translate-x-0 opacity-100` : `translate-x-full opacity-0`}`}>
+      <nav className={`text-gray-500  w-full h-screen py-8 fixed top-0 right-0 z-50 bg-primary shadow-lg transition-all duration-1000 ease text-3xl md:text-6xl  ${isNavOpen ? `translate-x-0 opacity-100` : `translate-x-full opacity-0`}`}>
         <div className='flex justify-end pb-8 pr-6'>
-          <button onClick={()=> setIsNavOpen(false)} className={`cursor-pointer text-xl hover:text-secondary `}><MdOutlineClose/></button>
+          <button onClick={()=> setIsNavOpen(false)} className={`cursor-pointer text-3xl hover:text-secondary `}><MdOutlineClose/></button>
         </div>
 
         <div className='flex flex-col w-full gap-y-6 text-center '>

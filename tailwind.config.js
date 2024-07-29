@@ -87,7 +87,7 @@ export default {
         ".group .group-child:hover":{
           width:"100%",
           height:"100%",
-          "z-index": "99"
+          "z-index": "20"
         }
       };
       addUtilities(newUtilities);
