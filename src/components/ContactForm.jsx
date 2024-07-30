@@ -49,7 +49,7 @@ const ContactForm = forwardRef(({ formData }, ref) => {
                 <div className=' w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-2'>
                     <input required value={firstName} onChange={(e) => setFirstName(e.target.value)} name='name' id='firstName' type="text" placeholder='First name' className='w-full  border-2 p-4 rounded-lg  focus:border-[#00B2FF] focus:outline-none hover:border-[#00B2FF]' />
                     <input required value={lastName} onChange={(e) => setLastName(e.target.value)} id='lastName' type="text" placeholder='Last name' className='w-full  border-2 p-4 rounded-lg  focus:border-[#00B2FF] focus:outline-none hover:border-[#00B2FF]' />
-
+                
                 </div>
                 <input required name='email' value={email} onChange={(e) => setEmail(e.target.value)} id='email' type="email" placeholder='Email' className='w-full  border-2 p-4 rounded-lg  focus:border-[#00B2FF] focus:outline-none hover:border-[#00B2FF] my-2' />
                 <input value={phoneNum} onChange={(e) => setPhoneNum(e.target.value)} id='phoneNumber' type="phoneNumber" placeholder='Phone number (Optional)' className='w-full  border-2 p-4 rounded-lg  focus:border-[#00B2FF] focus:outline-none hover:border-[#00B2FF] my-2' />

@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-    
+  
 
   return (
     <div className='overflow-x-hidden '>
@@ -20,6 +20,7 @@ function App() {
       <ProjectPage/>
       <ContactPage/>
       <ToastContainer/>
+      
     </div>
   )
 }
