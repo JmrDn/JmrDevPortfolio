@@ -7,7 +7,7 @@ const AboutDetails = () => {
         lg:text-4xl '>ABOUT ME</div>
         <div className='max-w-[300px] h-[1px] bg-tertiary'></div>
         <div className='text-black text-wrap my-4 text-lg
-        lg:my-8'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic quibusdam maiores quos, cumque dolorum recusandae eveniet odio neque ab totam esse, eligendi numquam voluptate rerum necessitatibus impedit earum error.</div>
+        lg:my-8 text-start'>A passionate Front-End Developer and Android Developer with IT background, skilled in  HTML, CSS, JavaScript and Java. Experienced in freelance Web Development and Android app development , now exploring React Development for dynamic, interactive web applications. Passionate about delivering high-quality, visually appealing user interfaces.</div>
     </div>
   )
 }
