@@ -20,7 +20,7 @@ const projectList = [
         name: 'Attendance Tracker Web',
         description: 'The web application was created to streamline employee attendance and payroll management. It allows for accurate tracking of hours, attendance, and wages, and automatically calculates wages based on attendance data. The user-friendly interface enhances productivity and accuracy in these operations, making it a valuable tool for organizations.',
         collaborators: ['Charles Ignacio'],
-        tech:['HTML', 'CSS', 'Javascript', 'PHP', 'Bootstrap'],
+        tech:['HTML', 'CSS', 'Javascript', 'PHP', 'Bootstrap', 'Firebase'],
         link:null
     },
     {
