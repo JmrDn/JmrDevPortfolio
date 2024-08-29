@@ -8,5 +8,5 @@ export default defineConfig({
   server:{
     port: 4000,
   },
-  base: "/JmrDevPortfolio"
+  
 })
