@@ -7,6 +7,7 @@ import GlumonHealthcareImg from '../assets/img/glumon_healthcare.png'
 import DogFinderImg from '../assets/img/dog_finder.png'
 import GuideBotImg from '../assets/img/guide_bot.png'
 import AttendanceTrackerAppImg from '../assets/img/attendance_tracker.png'
+import JmrDevHomePage from '../assets/img/homepage_jmrdevportfolio.jpg'
 import { FaEye } from "react-icons/fa";
 
 const Projects = ({ project }) => {
@@ -31,6 +32,8 @@ const Projects = ({ project }) => {
                 return AttendanceTrackerAppImg;
             case 'guide bot':
                 return GuideBotImg;
+            case 'my personal portfolio':
+                return JmrDevHomePage;
             default:
                 return null;
         }

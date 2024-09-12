@@ -8,6 +8,14 @@ const projectList = [
         link:'https://newmanhomesph.com/',
     },
     {
+        type: 'web',
+        name: 'My Personal Portfolio',
+        description: 'Building a clean and informative portfolio website. I created this website to specialize in react and tailwind, and I utilize this technology in my portfolio to demonstrate my ability to use them. ',
+        collaborators:null,
+        tech:['React', 'Tailwind'],
+        link:'https://jmr-dev-portfolio.vercel.app',
+    },
+    {
         type: 'android',
         name: 'Dog Finder',
         description: 'An app can be developed to track the location and heart rate of pets, providing valuable insights for pet owners. This app would allow users to monitor their pets real-time location and heart rate, offering peace of mind and helping to ensure the pets well-being. Additionally, the app would store and display a history of both the location and heart rate data, enabling users to review and analyze their pets activity patterns and health over time.',
